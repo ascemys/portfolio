@@ -5,7 +5,7 @@ export default function Header() {
     <header className="site-header">
       <div className="container header-inner">
         <a href="#accueil" className="brand">
-          <img src="/logo-ascemys-prod.jpg" alt="Logo Ascemys Prod" className="brand-logo" />
+          <img src="logo-ascemys-prod.jpg" alt="Logo Ascemys Prod" className="brand-logo" />
           <span className="brand-text">Ascemys Prod</span>
         </a>
         <nav className="nav">
