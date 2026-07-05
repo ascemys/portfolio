@@ -2,20 +2,20 @@ import React from 'react';
 
 const projects = [
   {
-    title: 'Neon Pulse',
-    meta: 'Clip musical • Montage dynamique',
+    title: 'Estu Néon',
+    meta: 'Aftermovie • Evenementiel',
     image:
       'https://media.base44.com/images/public/6a456d975a34869374233045/8fc8fc72_a_generated_85aa8ee1.png',
     text:
-      "Montage rythmé pour un clip à univers urbain, avec travail sur le tempo, les transitions et l'énergie visuelle.",
+      "Aftermovie d'une soirée étudiante réalisé dans le cadre de l’association vidéo Sous-sol Production de l’UTC .",
   },
   {
-    title: 'Motion Drop',
-    meta: 'Reel Instagram / TikTok',
+    title: 'Intégration UTC',
+    meta: 'Aftermovie',
     image:
       'https://media.base44.com/images/public/6a456d975a34869374233045/ceae1d1c4_generated_a7f9ae0b.png',
     text:
-      "Montage d'un reel de danse pensé pour capter l'attention dès les premières secondes, structurer le mouvement et amplifier l'énergie du morceau.",
+      "Aftermovie destiné à la promotion des différentes associations organisatrices de l'intégration.",
   },
   {
     title: 'Studio Frame',
