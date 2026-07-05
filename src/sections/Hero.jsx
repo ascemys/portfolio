@@ -22,7 +22,7 @@ export default function Hero() {
         </div>
         <div className="hero-side">
           <div className="hero-card">
-            <img src="/logo-ascemys-prod.jpg" alt="Logo Ascemys Prod" className="hero-logo" />
+            <img src="logo-ascemys-prod.jpg" alt="Logo Ascemys Prod" className="hero-logo" />
             <p className="hero-side-text">
               Studio de montage vidéo basé sur Paris, orienté impact visuel, rythme et clarté du message.
             </p>
