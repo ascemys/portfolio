@@ -15,8 +15,8 @@ export default function Showreel() {
         <div className="video-frame">
           <div className="video-inner">
             <iframe
-              src="https://www.instagram.com/reel/DYNRVuzN6u/embed"
-              title="Captation orchestre — teaser d'événement"
+              src="https://youtu.be/2GhUCZ5YYLs"
+              title="CV Vidéo"
               loading="lazy"
               referrerPolicy="no-referrer"
               allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
