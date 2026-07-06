@@ -6,20 +6,19 @@ export default function Showreel() {
       <div className="container">
         <div className="section-header center">
           <p className="eyebrow">Showreel</p>
-          <h2>Captation d'un orchestre — teaser d'événement</h2>
+          <h2>CV Vidéo </h2>
           <p>
-            Un aperçu de mon travail de montage sur une captation orchestrale, pensée pour donner envie,
-            suggérer l'énergie de l'événement et valoriser la scène.
+            Reprise de la DA de Hors Cadre Podcast pour présenter mon parcours et quelques projets clés.
           </p>
         </div>
         <div className="video-frame">
           <div className="video-inner">
             <iframe
               src="https://youtu.be/2GhUCZ5YYLs"
-              title="CV Vidéo"
+              title="Mon showreel YouTube"
               loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               referrerPolicy="no-referrer"
-              allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
             />
           </div>
         </div>
