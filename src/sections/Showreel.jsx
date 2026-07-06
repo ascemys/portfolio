@@ -1,5 +1,5 @@
 import React from 'react';
-
+const SHOWREEL_URL = "https://youtu.be/2GhUCZ5YYLs"; 
 export default function Showreel() {
   return (
     <section id="showreel" className="section showreel">
@@ -20,6 +20,16 @@ export default function Showreel() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               referrerPolicy="no-referrer"
             />
+            <div style={{ marginTop: 16, textAlign: "center" }}>
+              <a
+                href={SHOWREEL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-outline"
+              >
+    Voir la vidéo en grand
+  </a>
+</div>
           </div>
         </div>
       </div>
