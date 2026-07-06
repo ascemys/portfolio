@@ -20,6 +20,12 @@ export default function Showreel() {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               referrerPolicy="no-referrer"
             />
+            <div className="showreel-thumb">
+              <img
+                src="showreel-thumb.jpg"
+                alt="Miniature du showreel orchestrale"
+              />
+            </div>
             <div style={{ marginTop: 16, textAlign: "center" }}>
               <a
                 href={SHOWREEL_URL}
@@ -27,7 +33,7 @@ export default function Showreel() {
                 rel="noopener noreferrer"
                 className="btn btn-outline"
               >
-    Voir la vidéo en grand
+    Voir la vidéo
   </a>
 </div>
           </div>
