@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SHOWREEL_URL = "https://youtu.be/2GhUCZ5YYLs"; 
+const SHOWREEL_URL = "https://youtu.be/2GhUCZ5YYLs";
 
 export default function Showreel() {
   return (
@@ -17,24 +17,39 @@ export default function Showreel() {
         {/* MINIATURE DU SHOWREEL */}
         <div className="showreel-thumb">
           <img
-            src="showreel-thumb.jpg"
+            src="showreel-thumb.jpg"   // fichier à mettre dans le dossier public
             alt="Miniature du showreel CV vidéo"
           />
         </div>
 
-        {/* VIDÉO EMBED YOUTUBE */}
+        {/* LECTEUR VIDÉO YOUTUBE */}
         <div className="video-frame">
           <div className="video-inner">
             <iframe
-              src="https://www.youtube.com/embed/2GhUCZ5YYLs"
+              src="https://www.youtube-nocookie.com/embed/2GhUCZ5YYLs"
               title="Mon showreel YouTube"
               loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              referrerPolicy="no-referrer"
+              referrerPolicy="strict-origin-when-cross-origin"
             />
           </div>
         </div>
 
+        {/* BOUTON POUR OUVRIR LA VIDÉO EN GRAND */}
+        <div style={{ marginTop: 16, textAlign: "center" }}>
+          <a
+            href={SHOWREEL_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn btn-outline"
+          >
+            Voir la vidéo
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
         {/* BOUTON POUR OUVRIR LA VIDÉO EN GRAND */}
         <div style={{ marginTop: 16, textAlign: "center" }}>
           <a
