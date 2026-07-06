@@ -14,13 +14,6 @@ export default function Showreel() {
           </p>
         </div>
 
-        <div className="showreel-thumb">
-          <img
-            src="showreel-thumb.jpg"
-            alt="Miniature du showreel CV vidéo"
-          />
-        </div>
-
         <div className="video-frame">
           <div className="video-inner">
             <iframe
