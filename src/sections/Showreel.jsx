@@ -14,15 +14,13 @@ export default function Showreel() {
           </p>
         </div>
 
-        {/* MINIATURE DU SHOWREEL */}
         <div className="showreel-thumb">
           <img
-            src="showreel-thumb.jpg"   // fichier à mettre dans le dossier public
+            src="showreel-thumb.jpg"
             alt="Miniature du showreel CV vidéo"
           />
         </div>
 
-        {/* LECTEUR VIDÉO YOUTUBE */}
         <div className="video-frame">
           <div className="video-inner">
             <iframe
@@ -35,22 +33,6 @@ export default function Showreel() {
           </div>
         </div>
 
-        {/* BOUTON POUR OUVRIR LA VIDÉO EN GRAND */}
-        <div style={{ marginTop: 16, textAlign: "center" }}>
-          <a
-            href={SHOWREEL_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn btn-outline"
-          >
-            Voir la vidéo
-          </a>
-        </div>
-      </div>
-    </section>
-  );
-}
-        {/* BOUTON POUR OUVRIR LA VIDÉO EN GRAND */}
         <div style={{ marginTop: 16, textAlign: "center" }}>
           <a
             href={SHOWREEL_URL}
