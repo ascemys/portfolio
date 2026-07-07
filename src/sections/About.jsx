@@ -18,7 +18,7 @@ export default function About() {
           <h2>À propos de moi</h2>
           <p>
             Je suis Anaïs alias Ascemys, monteuse vidéo et vidéaste. Je bénéficie de plusieurs années d'expérience
-            en montage, avec un vrai goût pour le rythme, le storytelling visuel et la propreté de l'image.
+            en montage, avec un vrai goût pour le rythme, le storytelling visuel et l'esthétique de l'image.
             Créative et à l'écoute, je suis prête à vous accompagner dans vos projets : clips, contenus digitaux,
             interviews, vidéos promotionnelles ou formats sociaux.
           </p>
