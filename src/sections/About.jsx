@@ -26,7 +26,7 @@ export default function About() {
           <div className="about-highlight">
             <p className="about-highlight-title">Ce que je recherche</p>
             <p>
-              Je suis actuellement à la recherche d'une alternance de 1é ou 24 mois pour mon BTS Audiovisuel option Post-Production.
+              Je suis actuellement à la recherche d'une alternance de 12 ou 24 mois pour mon BTS Audiovisuel option Post-Production.
             </p>
           </div>
         </div>
