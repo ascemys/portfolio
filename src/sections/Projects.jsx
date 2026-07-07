@@ -48,10 +48,10 @@ const projects = [
     link: 'https://www.instagram.com/reel/DZm6m0coMfK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
   },
   {
-    title: 'Focus Format',
-    meta: 'Contenu YouTube long format',
+    title: 'Estu Néont',
+    meta: 'Aftermovie • Montage • Tournage',
     image:
-      'https://media.base44.com/images/public/6a456d975a34869374233045/0d12f48d9_generated_ab215dda.png',
+      'estuneon.jpg',
     text:
       "Montage long format avec attention portée à la clarté, au confort de visionnage et à la narration.",
     embedUrl: '',
