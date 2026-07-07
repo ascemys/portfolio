@@ -78,7 +78,7 @@ export default function Projects() {
       <div className="container">
         <div className="section-header">
           <p className="eyebrow">Projets</p>
-          <h2>Travaux sélectionnés</h2>
+          <h2>Travaux réalisés</h2>
         </div>
 
         <div className="projects-grid">
