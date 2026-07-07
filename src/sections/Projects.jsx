@@ -38,8 +38,8 @@ const projects = [
     embedUrl: 'https://www.youtube.com/embed/3QmBSqRIPKQ?si=KpIFo8wbX8fR77Ho',
   },
   {
-    title: 'Event Echo',
-    meta: 'Aftermovie • Événement',
+    title: 'Réel Danse',
+    meta: 'Format court • Danse • Tournage • Montage',
     image:
       'videodanse1.jpg',
     text:
