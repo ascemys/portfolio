@@ -53,10 +53,10 @@ export default function Contact() {
               <textarea name="message" rows={4} placeholder="Décrivez votre projet ou votre demande..." />
             </label>
             <button type="submit" className="btn btn-primary" disabled>
-              Envoyer le message (maquette)
+              Envoyer le message (en cours de développement)
             </button>
             <p className="form-note">
-              Ce formulaire est une maquette statique. Vous pourrez brancher un vrai envoi plus tard.
+              Ce formulaire est une maquette statique. Service bientôt disponible.
             </p>
           </form>
         </div>
