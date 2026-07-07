@@ -8,7 +8,6 @@ const projects = [
       'https://media.base44.com/images/public/6a456d975a34869374233045/8fc8fc72_a_generated_85aa8ee1.png',
     text:
       "Aftermovie d'une soirée étudiante réalisé dans le cadre de l’association vidéo Sous-sol Production de l’UTC.",
-    // URL d'embed YouTube ou autre (ex. YouTube no-cookie)
     embedUrl: 'https://www.youtube.com/embed/Faar9Q36_7g?si=siYzun8wJ9Wg6jGW',
   },
   {
@@ -31,7 +30,7 @@ const projects = [
   },
   {
     title: 'Study Vlog',
-    meta: 'Youtube • Montage ',
+    meta: 'Youtube • Montage',
     image:
       'https://media.base44.com/images/public/6a456d975a34869374233045/a1742338c_generated_cdb16d74.png',
     text:
@@ -46,6 +45,7 @@ const projects = [
     text:
       "Résumé dynamique d'un événement avec montée en intensité et mise en valeur de l'ambiance.",
     embedUrl: '',
+    link: 'https://www.youtube.com/watch?v=REMPLACE_PAR_TON_LIEN_EVENT_ECHO',
   },
   {
     title: 'Focus Format',
@@ -55,6 +55,7 @@ const projects = [
     text:
       "Montage long format avec attention portée à la clarté, au confort de visionnage et à la narration.",
     embedUrl: '',
+    link: 'https://www.youtube.com/watch?v=REMPLACE_PAR_TON_LIEN_FOCUS_FORMAT',
   },
 ];
 
@@ -66,12 +67,25 @@ export default function Projects() {
           <p className="eyebrow">Projets</p>
           <h2>Travaux sélectionnés</h2>
         </div>
+
         <div className="projects-grid">
           {projects.map((p) => (
             <article key={p.title} className="project-card">
               <div className="project-thumb">
-                <img src={p.image} alt={p.title} />
+                {p.link ? (
+                  <a
+                    href={p.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Ouvrir le projet ${p.title}`}
+                  >
+                    <img src={p.image} alt={p.title} />
+                  </a>
+                ) : (
+                  <img src={p.image} alt={p.title} />
+                )}
               </div>
+
               <div className="project-body">
                 <h3>{p.title}</h3>
                 <p className="project-meta">{p.meta}</p>
@@ -88,48 +102,18 @@ export default function Projects() {
                     />
                   </div>
                 )}
-              </div>
-            </article>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}    title: 'Event Echo',
-    meta: 'Aftermovie • Événement',
-    image:
-      'https://media.base44.com/images/public/6a456d975a34869374233045/47c9f622d_generated_5ee63994.png',
-    text:
-      "Résumé dynamique d'un événement avec montée en intensité et mise en valeur de l'ambiance.",
-  },
-  {
-    title: 'Focus Format',
-    meta: 'Contenu YouTube long format',
-    image:
-      'https://media.base44.com/images/public/6a456d975a34869374233045/0d12f48d9_generated_ab215dda.png',
-    text:
-      "Montage long format avec attention portée à la clarté, au confort de visionnage et à la narration.",
-  },
-];
 
-export default function Projects() {
-  return (
-    <section id="projets" className="section projects">
-      <div className="container">
-        <div className="section-header">
-          <p className="eyebrow">Projets</p>
-          <h2>Travaux sélectionnés</h2>
-        </div>
-        <div className="projects-grid">
-          {projects.map((p) => (
-            <article key={p.title} className="project-card">
-              <div className="project-thumb">
-                <img src={p.image} alt={p.title} />
-              </div>
-              <div className="project-body">
-                <h3>{p.title}</h3>
-                <p className="project-meta">{p.meta}</p>
-                <p>{p.text}</p>
+                {p.link && (
+                  <a
+                    href={p.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline"
+                    style={{ marginTop: 12, display: 'inline-block' }}
+                  >
+                    Voir le projet
+                  </a>
+                )}
               </div>
             </article>
           ))}
