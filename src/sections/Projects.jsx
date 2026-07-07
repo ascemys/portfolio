@@ -19,10 +19,10 @@ const getYouTubeWatchUrl = (embedUrl) => {
 const projects = [
   {
     title: 'Intégration UTC',
-    meta: 'Aftermovie • Montage • Tournage',
+    meta: 'Aftermovie • Montage',
     image: getYouTubeThumb('https://www.youtube.com/embed/Faar9Q36_7g?si=siYzun8wJ9Wg6jGW'),
     text:
-      "Aftermovie d'une soirée étudiante réalisé dans le cadre de l’association vidéo Sous-sol Production de l’UTC.",
+      "Aftermovie de l'intégration 2025 de l'UTC réalisé dans le cadre de l’association vidéo Sous-sol Production de l’UTC.",
     link: getYouTubeWatchUrl('https://www.youtube.com/embed/Faar9Q36_7g?si=siYzun8wJ9Wg6jGW'),
     platform: 'youtube',
   },
@@ -57,16 +57,16 @@ const projects = [
     meta: 'Format court • Danse • Tournage • Montage',
     image: 'videodanse1.jpg',
     text:
-      "Résumé dynamique d'un événement avec montée en intensité et mise en valeur de l'ambiance.",
+      "Vidéo d'une chorégraphie pour une danseuse/chorégraphe indépendante.",
     link: 'https://www.instagram.com/reel/DZm6m0coMfK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
     platform: 'instagram',
   },
   {
-    title: 'Estu Néont',
+    title: 'Estu Néon',
     meta: 'Aftermovie • Montage • Tournage',
     image: 'estuneon.jpg',
     text:
-      "Montage long format avec attention portée à la clarté, au confort de visionnage et à la narration.",
+      "Aftermovie d'une soirée étudiante réalisé dans le cadre de l’association vidéo Sous-sol Production de l’UTC.",
     link: 'https://www.instagram.com/reel/REMPLACE_PAR_TON_LIEN_FOCUS_FORMAT/',
     platform: 'instagram',
   },
