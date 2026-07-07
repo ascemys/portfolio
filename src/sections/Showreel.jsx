@@ -14,7 +14,13 @@ export default function Showreel() {
           </p>
         </div>
 
-        <div className="video-frame">
+        <div
+          className="video-frame"
+          style={{
+            maxWidth: "920px",
+            margin: "0 auto",
+          }}
+        >
           <div className="video-inner">
             <iframe
               src="https://www.youtube-nocookie.com/embed/2GhUCZ5YYLs"
@@ -22,6 +28,7 @@ export default function Showreel() {
               loading="lazy"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
             />
           </div>
         </div>
