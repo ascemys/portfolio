@@ -45,7 +45,7 @@ const projects = [
     text:
       "Résumé dynamique d'un événement avec montée en intensité et mise en valeur de l'ambiance.",
     embedUrl: '',
-    link: 'https://www.instagram.com/reel/REMPLACE_PAR_TON_LIEN_EVENT_ECHO/',
+    link: 'https://www.instagram.com/reel/DZm6m0coMfK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
   },
   {
     title: 'Focus Format',
