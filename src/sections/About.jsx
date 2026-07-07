@@ -7,7 +7,7 @@ export default function About() {
         <div className="about-image">
           <div className="about-image-card">
             <img
-              src="/EA1D24F3-C8E7-47CE-9DAE-6E23AE5ADC45.jpg"
+              src="/logo2.jpg"
               alt="Logo Ascemys"
             />
           </div>
