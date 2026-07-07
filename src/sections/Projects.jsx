@@ -67,7 +67,7 @@ const projects = [
     image: 'estuneon.jpg',
     text:
       "Aftermovie d'une soirée étudiante réalisé dans le cadre de l’association vidéo Sous-sol Production de l’UTC.",
-    link: 'https://www.instagram.com/reel/DXFLkmgjepa/?utm_source=ig_embed&amp;utm_campaign=loading',
+    link: 'https://www.instagram.com/reel/DXFLkmgjepa/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==',
     platform: 'instagram',
   },
 ];
