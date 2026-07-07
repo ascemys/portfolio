@@ -38,15 +38,87 @@ const projects = [
     embedUrl: 'https://www.youtube.com/embed/3QmBSqRIPKQ?si=KpIFo8wbX8fR77Ho',
   },
   {
-    title: 'Réel danse',
-    meta: 'Réel • Danse • Tournage • Montage',
+    title: 'Event Echo',
+    meta: 'Aftermovie • Événement',
     image:
       'https://media.base44.com/images/public/6a456d975a34869374233045/47c9f622d_generated_5ee63994.png',
     text:
       "Résumé dynamique d'un événement avec montée en intensité et mise en valeur de l'ambiance.",
     embedUrl: '',
-    link: 'https://www.instagram.com/reel/DZm6m0coMfK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+    link: 'https://www.instagram.com/reel/REMPLACE_PAR_TON_LIEN_EVENT_ECHO/',
   },
   {
     title: 'Focus Format',
-    meta: 'Contenu 
+    meta: 'Contenu YouTube long format',
+    image:
+      'https://media.base44.com/images/public/6a456d975a34869374233045/0d12f48d9_generated_ab215dda.png',
+    text:
+      "Montage long format avec attention portée à la clarté, au confort de visionnage et à la narration.",
+    embedUrl: '',
+    link: 'https://www.instagram.com/reel/REMPLACE_PAR_TON_LIEN_FOCUS_FORMAT/',
+  },
+];
+
+export default function Projects() {
+  return (
+    <section id="projets" className="section projects">
+      <div className="container">
+        <div className="section-header">
+          <p className="eyebrow">Projets</p>
+          <h2>Travaux sélectionnés</h2>
+        </div>
+
+        <div className="projects-grid">
+          {projects.map((p) => (
+            <article key={p.title} className="project-card">
+              {p.embedUrl ? (
+                <div className="project-video">
+                  <iframe
+                    src={p.embedUrl}
+                    title={`Vidéo du projet ${p.title}`}
+                    loading="lazy"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                  />
+                </div>
+              ) : (
+                <div className="project-thumb">
+                  {p.link ? (
+                    <a
+                      href={p.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`Ouvrir le projet ${p.title}`}
+                    >
+                      <img src={p.image} alt={p.title} />
+                    </a>
+                  ) : (
+                    <img src={p.image} alt={p.title} />
+                  )}
+                </div>
+              )}
+
+              <div className="project-body">
+                <h3>{p.title}</h3>
+                <p className="project-meta">{p.meta}</p>
+                <p>{p.text}</p>
+
+                {!p.embedUrl && p.link && (
+                  <a
+                    href={p.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn btn-outline"
+                    style={{ marginTop: 12, display: 'inline-block' }}
+                  >
+                    Voir sur Instagram
+                  </a>
+                )}
+              </div>
+            </article>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
