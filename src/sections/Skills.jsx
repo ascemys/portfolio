@@ -20,9 +20,9 @@ export default function Skills() {
               <span>Sound design</span>
               <span>Sous-titrage</span>
               <span>Motion design de base</span>
+              <span>Aftermovie</span>
               <span>Formats courts pour réseaux sociaux</span>
               <span>Interview &amp; corporate</span>
-              <span>Aftermovie</span>
             </div>
           </div>
 
@@ -39,7 +39,7 @@ export default function Skills() {
               <span>Sony a6700</span>
               <span>Sony FX3</span>
               <span>Blackmagic 6k</span>
-              <span>Lumix GH9</span>
+              <span>Lumix GH7</span>
               <span>Ronin RS 4 Pro</span>
             </div>
           </div>
