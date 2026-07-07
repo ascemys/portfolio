@@ -3,8 +3,8 @@ import React from 'react';
 export default function Hero() {
   return (
     <section id="accueil" className="section hero">
-      <div className="container hero-grid">
-        <div className="hero-text">
+      <div className="container">
+        <div className="hero-text" style={{ maxWidth: '100%' }}>
           <p className="eyebrow">Montage rythmé • storytelling visuel • formats digitaux</p>
           <h1>Monteuse et vidéaste</h1>
           <p className="hero-subtitle">
@@ -18,14 +18,6 @@ export default function Hero() {
           <div className="hero-status">
             <span className="status-dot" />
             <span className="status-text">Disponible pour missions & collaborations</span>
-          </div>
-        </div>
-        <div className="hero-side">
-          <div className="hero-card">
-            <img src="logo-ascemys-prod.jpg" alt="Logo Ascemys Prod" className="hero-logo" />
-            <p className="hero-side-text">
-              Studio de montage vidéo basé sur Paris, orienté impact visuel, rythme et clarté du message.
-            </p>
           </div>
         </div>
       </div>
