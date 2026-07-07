@@ -41,7 +41,7 @@ const projects = [
     title: 'Event Echo',
     meta: 'Aftermovie • Événement',
     image:
-      'https://media.base44.com/images/public/6a456d975a34869374233045/47c9f622d_generated_5ee63994.png',
+      'videodanse1.jpg',
     text:
       "Résumé dynamique d'un événement avec montée en intensité et mise en valeur de l'ambiance.",
     embedUrl: '',
