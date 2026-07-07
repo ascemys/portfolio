@@ -32,9 +32,15 @@ export default function Skills() {
               <span>Adobe Premiere Pro</span>
               <span>After Effects</span>
               <span>DaVinci Resolve</span>
-              <span>Optimisation des formats sociaux</span>
+              <span>Sony Vegas Pro</span>
+              <span>Avid Media Composer</span>
               <span>Photoshop</span>
-              <span>Montage vertical</span>
+              <span>Sony a7iv</span>
+              <span>Sony a6700</span>
+              <span>Sony FX3</span>
+              <span>Blackmagic 6k</span>
+              <span>Lumix GH9</span>
+              <span>Ronin RS 4 Pro</span>
             </div>
           </div>
         </div>
