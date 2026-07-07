@@ -31,7 +31,7 @@ const projects = [
     meta: 'Clip musical • DA • Montage • Tournage',
     image: getYouTubeThumb('https://www.youtube.com/embed/8IaAmdequUo?si=xb0YlSkbXF8-46zV'),
     text:
-      "Clip pour l'artiste indépendant ANspac3 et l'artiste new-yorkaise Ruby Deena",
+      "Clip pour l'artiste indépendant ANspac3 et l'artiste new-yorkaise Ruby Deena.",
     link: getYouTubeWatchUrl('https://www.youtube.com/embed/8IaAmdequUo?si=xb0YlSkbXF8-46zV'),
     platform: 'youtube',
   },
@@ -68,6 +68,32 @@ const projects = [
     text:
       "Aftermovie d'une soirée étudiante réalisé dans le cadre de l’association vidéo Sous-sol Production de l’UTC.",
     link: 'https://www.instagram.com/reel/DXFLkmgjepa/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==',
+    platform: 'instagram',
+  },
+   {
+    title: 'Gameplay Rematch',
+    meta: 'Jeux vidéo • Montage',
+    image: getYouTubeThumb('https://www.youtube.com/embed/WrBxoHUnxuY?si=09rJd3e3hIuBPb5x'),
+    text: "Vidéo Youtube d'exemple d'un montage de gameplay avec 3 pov pour Talcado.",
+    link: getYouTubeWatchUrl('https://www.youtube.com/embed/WrBxoHUnxuY?si=09rJd3e3hIuBPb5x'),
+    platform: 'youtube',
+  },
+  {
+    title: 'Teaser This is Love',
+    meta: 'Teaser • Musique • Montage',
+    image: 'soya1.jpg',
+    text:
+      "Teaser pour la sortie du single 'This is Love' de Soya.",
+    link: 'https://www.instagram.com/reel/DUOaUNxCEl5/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==',
+    platform: 'instagram',
+  },
+   {
+    title: 'Teaser Wait for Me',
+    meta: 'Teaser • Musique • Montage',
+    image: 'soya2.jpg',
+    text:
+      "Teaser pour la sortie du single 'Wait for Me' de Soya.",
+    link: 'https://www.instagram.com/reel/DZ5V-D8zCqT/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==',
     platform: 'instagram',
   },
 ];
