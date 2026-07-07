@@ -93,15 +93,19 @@ main {
 
 /* Hero */
 .hero {
-  background: radial-gradient(circle at top left, rgba(255, 0, 255, 0.18), transparent 55%),
-    radial-gradient(circle at bottom right, rgba(255, 255, 0, 0.12), transparent 55%), #080808;
+  background:
+    radial-gradient(circle at top left, rgba(255, 0, 255, 0.18), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(255, 255, 0, 0.12), transparent 55%),
+    #080808;
 }
 
 .hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 2.5fr) minmax(0, 1.5fr);
-  gap: 40px;
-  align-items: flex-end;
+  display: block;
+}
+
+.hero-text {
+  width: 100%;
+  max-width: 920px;
 }
 
 .hero-text h1 {
@@ -114,7 +118,7 @@ main {
 .hero-subtitle {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.65);
-  max-width: 520px;
+  max-width: 720px;
 }
 
 .hero-actions {
@@ -180,27 +184,27 @@ main {
 }
 
 .hero-side {
-  display: flex;
-  justify-content: flex-end;
+  display: none;
 }
 
-.hero-card {
-  border-radius: 18px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(8, 8, 8, 0.9);
-  padding: 20px;
-  max-width: 320px;
-}
-
-.hero-logo {
-  width: 100%;
-  border-radius: 12px;
-}
-
+.hero-card,
+.hero-logo,
 .hero-side-text {
-  margin-top: 14px;
-  font-size: 14px;
-  color: rgba(255, 255, 255, 0.7);
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  .hero-subtitle {
+    max-width: 100%;
+  }
+
+  .hero-status {
+    width: 100%;
+  }
 }
 
 /* Eyebrow label */
