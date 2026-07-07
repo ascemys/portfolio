@@ -6,7 +6,7 @@ export default function About() {
       <div className="container about-grid">
         <div className="about-image">
           <div className="about-image-card">
-            <img src="/logo-ascemys-prod.jpg" alt="Portrait graphique d'Ascemys" />
+            <img src="/logo2.jpg" alt="Portrait graphique d'Ascemys" />
           </div>
         </div>
         <div className="about-text">
