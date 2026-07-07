@@ -748,3 +748,6 @@ main {
     opacity: 0;
   }
 }
+.about-text p {
+  text-align: justify;
+}
