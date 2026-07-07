@@ -1,61 +1,74 @@
 import React from 'react';
 
+const getYouTubeId = (url) => {
+  if (!url) return '';
+  const match = url.match(/youtube\.com\/embed\/([^?]+)/);
+  return match ? match[1] : '';
+};
+
+const getYouTubeThumb = (embedUrl) => {
+  const id = getYouTubeId(embedUrl);
+  return id ? `https://img.youtube.com/vi/${id}/hqdefault.jpg` : '';
+};
+
+const getYouTubeWatchUrl = (embedUrl) => {
+  const id = getYouTubeId(embedUrl);
+  return id ? `https://www.youtube.com/watch?v=${id}` : '';
+};
+
 const projects = [
   {
     title: 'Intégration UTC',
     meta: 'Aftermovie • Montage • Tournage',
-    image:
-      'https://media.base44.com/images/public/6a456d975a34869374233045/8fc8fc72_a_generated_85aa8ee1.png',
+    image: getYouTubeThumb('https://www.youtube.com/embed/Faar9Q36_7g?si=siYzun8wJ9Wg6jGW'),
     text:
       "Aftermovie d'une soirée étudiante réalisé dans le cadre de l’association vidéo Sous-sol Production de l’UTC.",
-    embedUrl: 'https://www.youtube.com/embed/Faar9Q36_7g?si=siYzun8wJ9Wg6jGW',
+    link: getYouTubeWatchUrl('https://www.youtube.com/embed/Faar9Q36_7g?si=siYzun8wJ9Wg6jGW'),
+    platform: 'youtube',
   },
   {
     title: 'Clip LIFE',
     meta: 'Clip musical • DA • Montage • Tournage',
-    image:
-      'https://media.base44.com/images/public/6a456d975a34869374233045/ceae1d1c4_generated_a7f9ae0b.png',
+    image: getYouTubeThumb('https://www.youtube.com/embed/8IaAmdequUo?si=xb0YlSkbXF8-46zV'),
     text:
       "Clip pour l'artiste indépendant ANspac3 et l'artiste new-yorkaise Ruby Deena",
-    embedUrl: 'https://www.youtube.com/embed/8IaAmdequUo?si=xb0YlSkbXF8-46zV',
+    link: getYouTubeWatchUrl('https://www.youtube.com/embed/8IaAmdequUo?si=xb0YlSkbXF8-46zV'),
+    platform: 'youtube',
   },
   {
     title: 'Court métrage',
     meta: 'Scénario • Tournage • Montage',
-    image:
-      'https://media.base44.com/images/public/6a456d975a34869374233045/f201caf47_generated_1cc30bf5.png',
+    image: getYouTubeThumb('https://www.youtube.com/embed/NQbJzYdh1wQ?si=CN-3w2BqGIIog5ZQ'),
     text:
       "Court-métrage de sensibilisation au harcèlement sexiste et scolaire réalisé au sein de l'association égalité Homme-Femme de mon collège.",
-    embedUrl: 'https://www.youtube.com/embed/NQbJzYdh1wQ?si=CN-3w2BqGIIog5ZQ',
+    link: getYouTubeWatchUrl('https://www.youtube.com/embed/NQbJzYdh1wQ?si=CN-3w2BqGIIog5ZQ'),
+    platform: 'youtube',
   },
   {
     title: 'Study Vlog',
     meta: 'Youtube • Montage',
-    image:
-      'https://media.base44.com/images/public/6a456d975a34869374233045/a1742338c_generated_cdb16d74.png',
-    text:
-      "Vidéo style Study Vlog pour ma chaîne personnelle.",
-    embedUrl: 'https://www.youtube.com/embed/3QmBSqRIPKQ?si=KpIFo8wbX8fR77Ho',
+    image: getYouTubeThumb('https://www.youtube.com/embed/3QmBSqRIPKQ?si=KpIFo8wbX8fR77Ho'),
+    text: 'Vidéo style Study Vlog pour ma chaîne personnelle.',
+    link: getYouTubeWatchUrl('https://www.youtube.com/embed/3QmBSqRIPKQ?si=KpIFo8wbX8fR77Ho'),
+    platform: 'youtube',
   },
   {
     title: 'Réel Danse',
     meta: 'Format court • Danse • Tournage • Montage',
-    image:
-      'videodanse1.jpg',
+    image: 'videodanse1.jpg',
     text:
       "Résumé dynamique d'un événement avec montée en intensité et mise en valeur de l'ambiance.",
-    embedUrl: '',
     link: 'https://www.instagram.com/reel/DZm6m0coMfK/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+    platform: 'instagram',
   },
   {
     title: 'Estu Néont',
     meta: 'Aftermovie • Montage • Tournage',
-    image:
-      'estuneon.jpg',
+    image: 'estuneon.jpg',
     text:
       "Montage long format avec attention portée à la clarté, au confort de visionnage et à la narration.",
-    embedUrl: '',
     link: 'https://www.instagram.com/reel/REMPLACE_PAR_TON_LIEN_FOCUS_FORMAT/',
+    platform: 'instagram',
   },
 ];
 
@@ -71,39 +84,27 @@ export default function Projects() {
         <div className="projects-grid">
           {projects.map((p) => (
             <article key={p.title} className="project-card">
-              {p.embedUrl ? (
-                <div className="project-video">
-                  <iframe
-                    src={p.embedUrl}
-                    title={`Vidéo du projet ${p.title}`}
-                    loading="lazy"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    referrerPolicy="strict-origin-when-cross-origin"
-                  />
-                </div>
-              ) : (
-                <div className="project-thumb">
-                  {p.link ? (
-                    <a
-                      href={p.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`Ouvrir le projet ${p.title}`}
-                    >
-                      <img src={p.image} alt={p.title} />
-                    </a>
-                  ) : (
+              <div className="project-thumb">
+                {p.link ? (
+                  <a
+                    href={p.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Ouvrir le projet ${p.title}`}
+                  >
                     <img src={p.image} alt={p.title} />
-                  )}
-                </div>
-              )}
+                  </a>
+                ) : (
+                  <img src={p.image} alt={p.title} />
+                )}
+              </div>
 
               <div className="project-body">
                 <h3>{p.title}</h3>
                 <p className="project-meta">{p.meta}</p>
                 <p>{p.text}</p>
 
-                {!p.embedUrl && p.link && (
+                {p.link && (
                   <a
                     href={p.link}
                     target="_blank"
@@ -111,7 +112,7 @@ export default function Projects() {
                     className="btn btn-outline"
                     style={{ marginTop: 12, display: 'inline-block' }}
                   >
-                    Voir sur Instagram
+                    {p.platform === 'youtube' ? 'Voir sur YouTube' : 'Voir sur Instagram'}
                   </a>
                 )}
               </div>
