@@ -10,7 +10,7 @@ export default function Footer() {
           <p className="footer-text">Portfolio de montage vidéo & vidéaste.</p>
         </div>
         <div className="footer-right">
-          <p className="footer-meta">© {year} Ascemys — Tous droits réservés.</p>
+          <p className="footer-meta">© {year} Ascemys - Tous droits réservés.</p>
         </div>
       </div>
     </footer>
