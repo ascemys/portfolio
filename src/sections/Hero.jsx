@@ -8,7 +8,7 @@ export default function Hero() {
           <p className="eyebrow">Montage rythmé • storytelling visuel • formats digitaux</p>
           <h1>Monteuse et vidéaste</h1>
           <p className="hero-subtitle">
-            Je transforme les images en contenus dynamiques, propres et mémorables pour les artistes, les marques, les influenceurs et les entreprises.
+            Je transforme les images en contenus dynamiques, qualitative et mémorables pour les artistes, les marques, les influenceurs et les entreprises.
           </p>
           <div className="hero-actions">
             <a href="#showreel" className="btn btn-primary">Voir mon showreel</a>
