@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="container footer-inner">
         <div className="footer-left">
-          <p className="footer-brand">Ascemys Prod</p>
+          <p className="footer-brand">Ascemys Production</p>
           <p className="footer-text">Portfolio de montage vidéo & vidéaste.</p>
         </div>
         <div className="footer-right">
