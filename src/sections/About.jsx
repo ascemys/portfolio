@@ -6,9 +6,13 @@ export default function About() {
       <div className="container about-grid">
         <div className="about-image">
           <div className="about-image-card">
-            <img src="/logo2.jpg" alt="Portrait graphique d'Ascemys" />
+            <img
+              src="/EA1D24F3-C8E7-47CE-9DAE-6E23AE5ADC45.jpg"
+              alt="Logo Ascemys"
+            />
           </div>
         </div>
+
         <div className="about-text">
           <p className="eyebrow">Ascemys production</p>
           <h2>À propos de moi</h2>
@@ -18,11 +22,11 @@ export default function About() {
             Créative et à l'écoute, je suis prête à vous accompagner dans vos projets : clips, contenus digitaux,
             interviews, vidéos promotionnelles ou formats sociaux.
           </p>
+
           <div className="about-highlight">
             <p className="about-highlight-title">Ce que je recherche</p>
             <p>
-              Je suis actuellement à la recherche d'opportunités en montage vidéo, post-production et création de
-              contenus visuels pour des marques, agences, artistes ou créateurs.
+              Je suis actuellement à la recherche d'une alternance de 1é ou 24 mois pour mon BTS Audiovisuel option Post-Production.
             </p>
           </div>
         </div>
