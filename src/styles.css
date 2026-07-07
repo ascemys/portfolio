@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Cubano";
+  src: url("/fonts/Cubano.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
 
 /* Base styles */
@@ -76,10 +84,9 @@ main {
 }
 
 .brand-text {
-  font-family: "vesterbro-sans-vf", sans-serif;
+  font-family: "Cubano", sans-serif;
   font-size: 28px;
-  font-weight: 900;
-  font-variation-settings: "wght" 900;
+  font-weight: 400;
   letter-spacing: 0.02em;
   color: #ffffff;
 }
@@ -139,13 +146,12 @@ main {
 }
 
 .hero-text h1 {
-  font-family: "vesterbro-sans-vf", sans-serif;
+  font-family: "Cubano", sans-serif;
   font-size: clamp(54px, 8vw, 98px);
   line-height: 0.92;
   letter-spacing: -0.03em;
   margin: 16px 0 22px;
-  font-weight: 900;
-  font-variation-settings: "wght" 900;
+  font-weight: 400;
   max-width: 10ch;
 }
 
@@ -283,12 +289,11 @@ main {
 }
 
 .about-text h2 {
-  font-family: "vesterbro-sans-vf", sans-serif;
+  font-family: "Cubano", sans-serif;
   font-size: clamp(38px, 5vw, 58px);
   line-height: 0.98;
   margin: 10px 0 20px;
-  font-weight: 900;
-  font-variation-settings: "wght" 900;
+  font-weight: 400;
   letter-spacing: -0.02em;
 }
 
@@ -320,13 +325,12 @@ main {
 }
 
 .section-header h2 {
-  font-family: "vesterbro-sans-vf", sans-serif;
+  font-family: "Cubano", sans-serif;
   font-size: clamp(36px, 4.8vw, 58px);
   line-height: 1;
   margin-top: 12px;
   margin-bottom: 10px;
-  font-weight: 900;
-  font-variation-settings: "wght" 900;
+  font-weight: 400;
   letter-spacing: -0.02em;
 }
 
@@ -622,10 +626,9 @@ main {
 }
 
 .footer-brand {
-  font-family: "vesterbro-sans-vf", sans-serif;
+  font-family: "Cubano", sans-serif;
   font-size: 24px;
-  font-weight: 900;
-  font-variation-settings: "wght" 900;
+  font-weight: 400;
 }
 
 .footer-text {
