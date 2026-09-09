@@ -99,9 +99,9 @@ const projects = [
     {
     title: 'Montage Fridge Comedy Club',
     meta: 'Short • Stand-up • Montage',
-    image: getYouTubeThumb('https://youtube.com/shorts/-dQOuG8Uqmk?si=yxqeZkpP_LSdAdw9'),
+    image: getYouTubeThumb('https://youtube.com/embed/-dQOuG8Uqmk?si=yxqeZkpP_LSdAdw9'),
     text: "Montage d'un short pour le Fridge Comedy Club.",
-    link: getYouTubeWatchUrl('https://youtube.com/shorts/-dQOuG8Uqmk?si=yxqeZkpP_LSdAdw9'),
+    link: getYouTubeWatchUrl('https://youtube.com/embed/-dQOuG8Uqmk?si=yxqeZkpP_LSdAdw9'),
     platform: 'youtube',
   },
 ];
