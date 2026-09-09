@@ -96,6 +96,14 @@ const projects = [
     link: 'https://www.instagram.com/reel/DZ5V-D8zCqT/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==',
     platform: 'instagram',
   },
+    {
+    title: 'Montage Fridge Comedy Club',
+    meta: 'Short • Stand-up • Montage',
+    image: getYouTubeThumb('https://youtube.com/shorts/-dQOuG8Uqmk?si=yxqeZkpP_LSdAdw9'),
+    text: "Montage d'un short pour le Fridge Comedy Club.",
+    link: getYouTubeWatchUrl('https://youtube.com/shorts/-dQOuG8Uqmk?si=yxqeZkpP_LSdAdw9'),
+    platform: 'youtube',
+  },
 ];
 
 export default function Projects() {
