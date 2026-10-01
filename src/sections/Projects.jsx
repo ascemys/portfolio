@@ -97,11 +97,19 @@ const projects = [
     platform: 'instagram',
   },
     {
-    title: 'Montage Fridge Comedy Club',
-    meta: 'Short • Stand-up • Montage',
-    image: getYouTubeThumb('https://youtube.com/embed/-dQOuG8Uqmk?si=yxqeZkpP_LSdAdw9'),
-    text: "Montage d'un short pour le Fridge Comedy Club.",
-    link: getYouTubeWatchUrl('https://youtube.com/embed/-dQOuG8Uqmk?si=yxqeZkpP_LSdAdw9'),
+    title: 'Mariage Isella & Paul - Vers. Vintage'
+    meta: 'Mini-film • Mariage • Tournage • Montage',
+    image: getYouTubeThumb('https://www.youtube.com/embed/CyfQdbgvHI8?si=8KfydsEOdefQ5Bbo'),
+    text: "Captation et montage du mariage de Isella & Paul. Film vintage effet VHS",
+    link: getYouTubeWatchUrl('https://www.youtube.com/embed/CyfQdbgvHI8?si=8KfydsEOdefQ5Bbo'),
+    platform: 'youtube',
+  },
+  {
+    title: 'Mariage Isella & Paul - Vers. Longue',
+    meta: 'Mini-film • Mariage • Tournage • Montage',
+    image: getYouTubeThumb('https://www.youtube.com/embed/GADrpBLFSow?si=8BSwNtu0hWg7bVOb'),
+    text: "Captation complète et montage du mariage de Isella & Paul. Film retracant les moments forts et les emotions du mariage.",
+    link: getYouTubeWatchUrl('https://www.youtube.com/embed/GADrpBLFSow?si=8BSwNtu0hWg7bVOb'),
     platform: 'youtube',
   },
 ];
