@@ -96,7 +96,7 @@ const projects = [
     link: 'https://www.instagram.com/reel/DZ5V-D8zCqT/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==',
     platform: 'instagram',
   },
-    {
+  {
     title: 'Mariage Isella & Paul - Vers. Vintage'
     meta: 'Mini-film • Mariage • Tournage • Montage',
     image: getYouTubeThumb('https://www.youtube.com/embed/CyfQdbgvHI8?si=8KfydsEOdefQ5Bbo'),
@@ -104,7 +104,7 @@ const projects = [
     link: getYouTubeWatchUrl('https://www.youtube.com/embed/CyfQdbgvHI8?si=8KfydsEOdefQ5Bbo'),
     platform: 'youtube',
   },
-  {
+    {
     title: 'Mariage Isella & Paul - Vers. Longue',
     meta: 'Mini-film • Mariage • Tournage • Montage',
     image: getYouTubeThumb('https://www.youtube.com/embed/GADrpBLFSow?si=8BSwNtu0hWg7bVOb'),
