@@ -97,7 +97,7 @@ const projects = [
     platform: 'instagram',
   },
   {
-    title: 'Mariage Isella & Paul - Vers. Vintage'
+    title: 'Mariage Isella & Paul - Vers. Vintage',
     meta: 'Mini-film • Mariage • Tournage • Montage',
     image: getYouTubeThumb('https://www.youtube.com/embed/CyfQdbgvHI8?si=8KfydsEOdefQ5Bbo'),
     text: "Captation et montage du mariage de Isella & Paul. Film vintage effet VHS",
